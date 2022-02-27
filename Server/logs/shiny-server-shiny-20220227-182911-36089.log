@@ -1,0 +1,148 @@
+su: ignoring --preserve-environment, it's mutually exclusive with --login
+
+Attaching package: ‘shinydashboard’
+
+The following object is masked from ‘package:graphics’:
+
+    box
+
+corrplot 0.92 loaded
+Loading required package: ggplot2
+
+Attaching package: ‘plotly’
+
+The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+The following object is masked from ‘package:graphics’:
+
+    layout
+
+Loading required package: sp
+Please note that rgdal will be retired by the end of 2023,
+plan transition to sf/stars/terra functions using GDAL and PROJ
+at your earliest convenience.
+
+rgdal: version: 1.5-28, (SVN revision 1158)
+Geospatial Data Abstraction Library extensions to R successfully loaded
+Loaded GDAL runtime: GDAL 3.4.1, released 2021/12/27
+Path to GDAL shared files: /usr/share/gdal
+GDAL binary built with GEOS: TRUE 
+Loaded PROJ runtime: Rel. 8.2.1, January 1st, 2022, [PJ_VERSION: 821]
+Path to PROJ shared files: /home/shiny/.local/share/proj:/usr/share/proj
+PROJ CDN enabled: FALSE
+Linking to sp version:1.4-6
+To mute warnings of possible GDAL/OSR exportToProj4() degradation,
+use options("rgdal_show_exportToProj4_warnings"="none") before loading sp or rgdal.
+Checking rgeos availability: FALSE
+Please note that 'maptools' will be retired by the end of 2023,
+plan transition at your earliest convenience;
+some functionality will be moved to 'sp'.
+ 	Note: when rgeos is not available, polygon geometry 	computations in maptools depend on gpclib,
+ 	which has a restricted licence. It is disabled by default;
+ 	to enable gpclib, type gpclibPermit()
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
+✔ tibble  3.1.6     ✔ purrr   0.3.4
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks plotly::filter(), stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning in OGRSpatialRef(dsn, layer, morphFromESRI = morphFromESRI, dumpSRS = dumpSRS,  :
+  Discarded datum European_Terrestrial_Reference_System_1989 in Proj4 definition: +proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+Warning in OGRSpatialRef(dsn, layer, morphFromESRI = morphFromESRI, dumpSRS = dumpSRS,  :
+  Discarded datum European_Terrestrial_Reference_System_1989 in Proj4 definition: +proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+Regions defined for each Polygons
+Regions defined for each Polygons
+Warning in OGRSpatialRef(dsn, layer, morphFromESRI = morphFromESRI, dumpSRS = dumpSRS,  :
+  Discarded datum European_Terrestrial_Reference_System_1989 in Proj4 definition: +proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+
+Listening on http://127.0.0.1:36089
+Warning: Error in .approxfun: unused argument (na.rm)
+  123: l_interp
+  121: ramp
+  120: f
+  119: self$palette
+  118: f
+  117: self$map
+  116: FUN
+  115: lapply
+  114: f
+  113: scale$map_df
+  112: FUN
+  111: lapply
+  109: FUN
+  108: lapply
+  107: ggplotly_build
+  106: gg2list
+  105: ggplotly.ggplot
+  102: plotly_build.gg
+   98: getFromNamespace("prepareWidget", "plotly")
+   97: shinyRenderWidget
+   96: func
+   83: renderFunc
+   82: output$Density_Overview
+    1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Bedburg-Hau.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Bedburg-Hau.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Weeze.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Weeze.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Kranenburg.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Kranenburg.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+
+
+Execution halted
