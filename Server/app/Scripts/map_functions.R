@@ -8,10 +8,10 @@ ColorMap = function(Color_By_Data){
   Color_By_Data = Color_By_Data %>% 
     dplyr::select(AGS,Data)
   
-  if(is.numeric(Color_By_Data$AGS)){
-    Color_By_Data$AGS = paste("0",as.character(Color_By_Data$AGS), sep ="")
-  }
-  
+  #if(is.numeric(Color_By_Data$AGS)){
+  #  Color_By_Data$AGS = paste("0",Color_By_Data$AGS), sep ="")
+  #}
+  Color_By_Data$AGS = as.character(Color_By_Data$AGS)
   shp_df_new = shp_df %>% 
     left_join(Color_By_Data, 
               by = c("AGS" = "AGS"))
@@ -70,7 +70,7 @@ createDensityMap = function(muni){
   nrw = spTransform(nrw, CRS("+proj=longlat +ellps=WGS84 +datum=WGS84"))
   
   new_shp_df = broom::tidy(new_munc) %>% 
-    left_join(rio ::import("data/munc_codes.csv", colClasses = rep("character", 3)), 
+    left_join(rio ::import("data/munc_codes_linux.csv", colClasses = rep("character", 3)), 
               by = c("id" = "Geo_Code"))
   
   ggplot(data=muni, aes(location.lon, location.lat)) +
@@ -94,7 +94,7 @@ createCompleteDensityMap = function(){
   new_munc = spTransform(munc, CRS("+proj=longlat +ellps=WGS84 +datum=WGS84"))
   
   new_shp_df = broom::tidy(new_munc) %>% 
-    left_join(rio ::import("data/munc_codes.csv", colClasses = rep("character", 3)), 
+    left_join(rio ::import("data/munc_codes_linux.csv", colClasses = rep("character", 3)), 
               by = c("id" = "Geo_Code"))
   
   

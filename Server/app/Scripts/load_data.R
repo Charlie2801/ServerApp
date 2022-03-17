@@ -1,6 +1,6 @@
 #scripts for loading data into the app
 #load environmental variables
-load('myEnvironment.RData')
+#load('myEnvironment.RData')
 #full information on each simulation run for each municipality
 full_overview <<- read.csv2("data/Complete_Simulations_Info_Update_Final.csv", colClasses = c('AGS'='character'))
 
@@ -37,10 +37,10 @@ counties <<- readOGR(dsn = "data/shapes/VG250_GEM.shp", stringsAsFactors = F)%>%
 
 #Prepare Data 
 shp_df <<- broom::tidy(munc) %>% 
-  left_join(rio ::import("data/munc_codes.csv", colClasses = rep("character", 3)), 
+  left_join(rio ::import("data/munc_codes_linux.csv", colClasses = rep("character", 3)), 
             by = c("id" = "Geo_Code"))
 cnames <- aggregate(cbind(long, lat) ~ id, data=shp_df, FUN=mean) %>%
-  left_join(rio ::import("data/munc_codes.csv", colClasses = rep("character", 3)), 
+  left_join(rio ::import("data/munc_codes_linux.csv", colClasses = rep("character", 3)), 
             by = c("id" = "Geo_Code"))
 
 #Create basic Map of NRW

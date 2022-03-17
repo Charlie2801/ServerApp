@@ -1,0 +1,694 @@
+su: ignoring --preserve-environment, it's mutually exclusive with --login
+
+Attaching package: ‘shinydashboard’
+
+The following object is masked from ‘package:graphics’:
+
+    box
+
+corrplot 0.92 loaded
+Loading required package: ggplot2
+
+Attaching package: ‘plotly’
+
+The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+The following object is masked from ‘package:graphics’:
+
+    layout
+
+Loading required package: sp
+Please note that rgdal will be retired by the end of 2023,
+plan transition to sf/stars/terra functions using GDAL and PROJ
+at your earliest convenience.
+
+rgdal: version: 1.5-28, (SVN revision 1158)
+Geospatial Data Abstraction Library extensions to R successfully loaded
+Loaded GDAL runtime: GDAL 3.4.1, released 2021/12/27
+Path to GDAL shared files: /usr/share/gdal
+GDAL binary built with GEOS: TRUE 
+Loaded PROJ runtime: Rel. 8.2.1, January 1st, 2022, [PJ_VERSION: 821]
+Path to PROJ shared files: /home/shiny/.local/share/proj:/usr/share/proj
+PROJ CDN enabled: FALSE
+Linking to sp version:1.4-6
+To mute warnings of possible GDAL/OSR exportToProj4() degradation,
+use options("rgdal_show_exportToProj4_warnings"="none") before loading sp or rgdal.
+Checking rgeos availability: FALSE
+Please note that 'maptools' will be retired by the end of 2023,
+plan transition at your earliest convenience;
+some functionality will be moved to 'sp'.
+ 	Note: when rgeos is not available, polygon geometry 	computations in maptools depend on gpclib,
+ 	which has a restricted licence. It is disabled by default;
+ 	to enable gpclib, type gpclibPermit()
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
+✔ tibble  3.1.6     ✔ purrr   0.3.4
+✔ tidyr   1.2.0     ✔ stringr 1.4.0
+✔ readr   2.1.2     ✔ forcats 0.5.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks plotly::filter(), stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:dplyr’:
+
+    combine
+
+
+Attaching package: ‘lubridate’
+
+The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+Warning in OGRSpatialRef(dsn, layer, morphFromESRI = morphFromESRI, dumpSRS = dumpSRS,  :
+  Discarded datum European_Terrestrial_Reference_System_1989 in Proj4 definition: +proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+Warning in OGRSpatialRef(dsn, layer, morphFromESRI = morphFromESRI, dumpSRS = dumpSRS,  :
+  Discarded datum European_Terrestrial_Reference_System_1989 in Proj4 definition: +proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+Regions defined for each Polygons
+Regions defined for each Polygons
+Warning in OGRSpatialRef(dsn, layer, morphFromESRI = morphFromESRI, dumpSRS = dumpSRS,  :
+  Discarded datum European_Terrestrial_Reference_System_1989 in Proj4 definition: +proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs
+
+Listening on http://127.0.0.1:46815
+Warning in proj4string(nrw) :
+  CRS object has comment, which is lost in output; in tests, see
+https://cran.r-project.org/web/packages/sp/vignettes/CRS_warnings.html
+Warning in proj4string(munc) :
+  CRS object has comment, which is lost in output; in tests, see
+https://cran.r-project.org/web/packages/sp/vignettes/CRS_warnings.html
+Regions defined for each Polygons
+Regions defined for each Polygons
+`geom_smooth()` using formula 'y ~ x'
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Bedburg-Hau.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Bedburg-Hau.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Issum.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Issum.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Kerken.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Kerken.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Kranenburg.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Kranenburg.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Weeze.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Weeze.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Rommerskirchen.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Rommerskirchen.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Alpen.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Alpen.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Schermbeck.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Schermbeck.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Monschau.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Monschau.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Linnich.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Linnich.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Noervenich.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Noervenich.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Kall.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Kall.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Schleiden.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Schleiden.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Gangelt.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Gangelt.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Selfkant.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Selfkant.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Gangelt.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Gangelt.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Selfkant.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Selfkant.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Morsbach.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Morsbach.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Ruppichteroth.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Ruppichteroth.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Isselburg.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Isselburg.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Raesfeld.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Raesfeld.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Velen.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Velen.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Billerbeck.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Billerbeck.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Havixbeck.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Havixbeck.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Olfen.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Olfen.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Rosendahl.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Rosendahl.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Altenberge.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Altenberge.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Mettingen.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Mettingen.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Recke.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Recke.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Westerkappeln.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Westerkappeln.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Ostbevern.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Ostbevern.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Sendenhorst.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Sendenhorst.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Wadersloh.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Wadersloh.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Werther.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Werther.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Steinheim.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Steinheim.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Extertal.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Extertal.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Luegde.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Luegde.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Huellhorst.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Huellhorst.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Preussisch Oldendorf.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Preussisch Oldendorf.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Borchen.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Borchen.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Lichtenau.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Lichtenau.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Bad Wuennenberg.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Bad Wuennenberg.jpg": No such file or directory
+Warning: Error in eval: object 'Z_Maps_Bad Wuennenberg' not found
+  104: eval
+  103: eval
+  102: getMuncMaps
+  101: renderPlotly
+  100: func
+   97: shinyRenderWidget
+   96: func
+   83: renderFunc
+   82: output$muncMap
+    1: runApp
+Warning: Error in eval: object 'Z_Bad Wuennenberg' not found
+  104: eval
+  103: eval
+  102: getTimeCases
+  101: renderPlotly
+  100: func
+   97: shinyRenderWidget
+   96: func
+   83: renderFunc
+   82: output$timeCases
+    1: runApp
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Bestwig.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Bestwig.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Winterberg.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Winterberg.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Balve.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Balve.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Neuenrade.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Neuenrade.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Schalksmuehle.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Schalksmuehle.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Drolshagen.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Drolshagen.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Kirchhundem.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Kirchhundem.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Anroechte.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Anroechte.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Bad Sassendorf.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Bad Sassendorf.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Ense.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Ense.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Lippetal.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Lippetal.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Moehnesee.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Moehnesee.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Ruethen.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Ruethen.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Welver.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Welver.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPerAge/Wickede.jpg": No such file or directory
+Warning in normalizePath(file.path("./images", plotType, paste(selected_munc,  :
+  path[1]="./images/InfPercPerAge/Wickede.jpg": No such file or directory
+Warning: Error in singleMuncFrame: could not find function "singleMuncFrame"
+  97: renderDataTable
+  96: func
+  83: renderFunc
+  82: output$GeneralMunc
+   1: runApp
+
+
+Execution halted

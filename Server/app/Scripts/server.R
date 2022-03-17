@@ -34,7 +34,7 @@ server = function(input, output){
   })
   
   output$Density_Overview = renderPlotly({
-    completeDensityMapNRW
+    test#completeDensityMapNRW
   })
   
 
